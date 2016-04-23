@@ -13,7 +13,7 @@ gem 'bower-rails'
 gem 'faker'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
