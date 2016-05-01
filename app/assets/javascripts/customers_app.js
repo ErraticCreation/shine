@@ -77,6 +77,11 @@ app.controller("CustomerDetailController", [
         $scope.customer.billing_address_id ==
           $scope.customer.shipping_address_id;
     });
+
+    $scope.save = function() {
+      alert($scope.form.$valid);
+    }
+
   }
 ]);
 
