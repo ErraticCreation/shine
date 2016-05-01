@@ -1,6 +1,6 @@
 # Guard against re-creating customers if we already have some
 if Customer.all.count == 0
-  350_000.times do |i|
+  200.times do |i|
     email = Faker::Internet.user_name + i.to_s +
       "@#{Faker::Internet.domain_name}"
     Customer.create!(
