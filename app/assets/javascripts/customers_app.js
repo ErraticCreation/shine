@@ -80,7 +80,9 @@ app.controller("CustomerDetailController", [
     });
 
     $scope.save = function() {
-      alert($scope.form.$valid);
+      if ($scope.form.$valid){
+        alert("Save!");
+      }
     }
 
   }
